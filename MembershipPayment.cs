@@ -13,7 +13,13 @@ namespace BusinessRuleEngine
 
         public void ProcessPayment()
         {
-            throw new NotImplementedException();
+            ActivatememberShip();
+           // throw new NotImplementedException();
+        }
+
+        private void ActivatememberShip()
+        { 
+
         }
     }
 }

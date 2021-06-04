@@ -8,11 +8,11 @@ namespace BusinessRuleEngine
 {
     public class Address
     {
-        string AddressType;
-        string AddressLine1;
-        string AddressLine2;
-        string PinCode;
-        string City;
-        string ContactNumber;
+        public string AddressType;
+        public string AddressLine1;
+        public string AddressLine2;
+        public string PinCode;
+        public string City;
+        public string ContactNumber;
     }
 }

@@ -8,8 +8,8 @@ namespace BusinessRuleEngine
 {
     class Package
     {
-        int PackageId;
-        PackageTypeEnum PackageType;
-        Address DeliveryAddress ;
+        public  int PackageId;
+        public PackageTypeEnum PackageType;
+        public Address DeliveryAddress ;
     }
 }

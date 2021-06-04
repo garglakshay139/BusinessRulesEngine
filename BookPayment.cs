@@ -13,7 +13,12 @@ namespace BusinessRuleEngine
 
         public void ProcessPayment()
         {
-            throw new NotImplementedException();
+            GenerateRoyalitySlip();
+        }
+
+        private void GenerateRoyalitySlip()
+        { 
+        
         }
     }
 }

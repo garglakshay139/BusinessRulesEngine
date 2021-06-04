@@ -9,7 +9,7 @@ namespace BusinessRuleEngine
     internal class PhysicalProductPayment : IPayment
     {
         public int PaymentType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public PaymentEntity Payment { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public PaymentEntity Payment  { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void ProcessPayment()
         {
@@ -18,8 +18,16 @@ namespace BusinessRuleEngine
         }
 
         private void GeneratePackingSlip()
-        { 
-            
+        {
+            var packageSlipInfo = new Package()
+            {
+                PackageType = PackageTypeEnum.Standard,
+                DeliveryAddress = new Address()
+                {
+                    AddressLine1 = "AddressLine1",
+                    PinCode = "pincode"
+                }
+            };
         }
     }
 }
