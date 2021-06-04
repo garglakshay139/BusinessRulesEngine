@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.cs" />
     <Compile Include="BookPayment.cs" />
     <Compile Include="IPayment.cs" />
     <Compile Include="MembershipPayment.cs" />
     <Compile Include="MembershipUpgradePayment.cs" />
+    <Compile Include="Package.cs" />
+    <Compile Include="PackageTypeEnum.cs" />
     <Compile Include="PaymentEntity.cs" />
     <Compile Include="PaymentFactory.cs" />
     <Compile Include="PhysicalProductorBookPayment.cs" />

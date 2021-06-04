@@ -20,6 +20,10 @@ namespace BusinessRuleEngine
             Console.WriteLine("Enter 7 for Physical Product or a Book");
 
             int paymentType = Convert.ToInt32(Console.ReadLine());
+
+           IPayment paymentProcessing =  PaymentFactory.GetThePaymentprocessingFlow(paymentType);
+
+            paymentProcessing.ProcessPayment();
         }
     }
 }

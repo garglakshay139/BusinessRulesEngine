@@ -13,7 +13,13 @@ namespace BusinessRuleEngine
 
         public void ProcessPayment()
         {
-            throw new NotImplementedException();
+            GeneratePackingSlip();
+            //throw new NotImplementedException();
+        }
+
+        private void GeneratePackingSlip()
+        { 
+            
         }
     }
 }
