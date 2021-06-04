@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRuleEngine
 {
-    class PaymentEntity
+    public class PaymentEntity
     {
         public int PaymentId { get; set; }
         public float TotalAmount { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace BusinessRuleEngine
 {
    
-        enum PackageTypeEnum
+        public enum PackageTypeEnum
         {
             Standard,
             Express

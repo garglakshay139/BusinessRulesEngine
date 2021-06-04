@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BusinessRuleEngine
 {
-    interface IPayment
+    public interface IPayment
     {
+        ISlip iSlip { get; set; }
         int PaymentType { get; set; }
         
         PaymentEntity Payment { get; set; }

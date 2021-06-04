@@ -46,6 +46,7 @@
     <Compile Include="Address.cs" />
     <Compile Include="BookPayment.cs" />
     <Compile Include="IPayment.cs" />
+    <Compile Include="ISlip.cs" />
     <Compile Include="MembershipPayment.cs" />
     <Compile Include="MembershipUpgradePayment.cs" />
     <Compile Include="Package.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="PhysicalProductPayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slip.cs" />
     <Compile Include="VideoPayment.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessRuleEngine
 {
-    class Package
+    public class Package
     {
         public  int PackageId;
         public PackageTypeEnum PackageType;

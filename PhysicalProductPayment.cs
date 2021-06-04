@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace BusinessRuleEngine
 {
-    internal class PhysicalProductPayment : IPayment
+    public class PhysicalProductPayment : IPayment
     {
+        public ISlip iSlip { get; set; }
         public int PaymentType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public PaymentEntity Payment  { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
+        public PhysicalProductPayment()
+        {
+            iSlip = new Slip();
+        }
         public void ProcessPayment()
         {
-            GeneratePackingSlip();
+           var packageSlipInfo =  GeneratePackingSlip();
+            iSlip.ProcessPackagingSlip(packageSlipInfo);
             //throw new NotImplementedException();
         }
 
-        private void GeneratePackingSlip()
+        private Package GeneratePackingSlip()
         {
             var packageSlipInfo = new Package()
             {
@@ -28,6 +34,8 @@ namespace BusinessRuleEngine
                     PinCode = "pincode"
                 }
             };
+
+            return packageSlipInfo;
         }
     }
 }
