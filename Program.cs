@@ -10,7 +10,7 @@ namespace BusinessRuleEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the payment Type");
+            Console.WriteLine("Enter the Payment Type");
         }
     }
 }
